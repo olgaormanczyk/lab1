@@ -25,22 +25,23 @@ namespace lab1
 		{
 
 			InitializeComponent();
-			dispatcherTimer.Tick += h;
-			dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+
+			dispatcherTimer.Interval = new TimeSpan(0, 0, 1); /// do formatu 
+			dispatcherTimer.Tick += h; 
 			dispatcherTimer.Start();
 
 
 		}
 		private void h(object sender, EventArgs e)
 		{
-			timer_label.Content = DateTime.Now.ToString("HH:mm:ss");
+			timer_label.Content = DateTime.Now.ToString("HH:mm:ss"); /// format czasu
 		}
 
 		private void stopper_button_Click(object sender, RoutedEventArgs e)
 		{
-			StoperWindow stoper
+			stop okno = new stop();
+			okno.Show();
 			
-			dispatcherTimer.Stop();
 		}
 	}
 }

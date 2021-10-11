@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:lab1"
         mc:Ignorable="d"
         Title="stop" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+	<Grid>
+		<Label x:Name="timer_label" Content="STOPER" HorizontalAlignment="Left" Margin="267,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.371,-1.377" Height="147" Width="267" FontSize="40" FontFamily="Arial Black"/>
+		<Button x:Name="start" Content="START" HorizontalAlignment="Left" Margin="173,309,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+		<Button x:Name="stop1" Content="STOP" HorizontalAlignment="Left" Margin="521,309,0,0" VerticalAlignment="Top" Width="75" Click="stop1_Click"/>
+
+	</Grid>
 </Window>

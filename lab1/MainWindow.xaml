@@ -12,7 +12,7 @@
 			<ColumnDefinition Width="129*"/>
 			<ColumnDefinition Width="268*"/>
 		</Grid.ColumnDefinitions>
-		<Label x:Name="timer_label" Content="Label" HorizontalAlignment="Left" Margin="92.4,159,0,0" VerticalAlignment="Top" FontSize="40" Grid.Column="2" FontFamily="Franklin Gothic Heavy" Height="77"/>
+		<Label x:Name="timer_label" Content="Label" HorizontalAlignment="Left" Margin="92.4,159,0,0" VerticalAlignment="Top" FontSize="40" Grid.Column="2" FontFamily="Arial Black" Height="77"/>
 		<Button x:Name="stopper_button" Content="Stopper" Grid.Column="2" HorizontalAlignment="Left" Margin="321.4,318,0,0" VerticalAlignment="Top" Width="75" Click="stopper_button_Click"/>
 	</Grid>
 </Window>
