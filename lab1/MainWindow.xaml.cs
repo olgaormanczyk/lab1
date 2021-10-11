@@ -20,9 +20,27 @@ namespace lab1
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
 		public MainWindow()
 		{
+
 			InitializeComponent();
+			dispatcherTimer.Tick += h;
+			dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+			dispatcherTimer.Start();
+
+
+		}
+		private void h(object sender, EventArgs e)
+		{
+			timer_label.Content = DateTime.Now.ToString("HH:mm:ss");
+		}
+
+		private void stopper_button_Click(object sender, RoutedEventArgs e)
+		{
+			StoperWindow stoper
+			
+			dispatcherTimer.Stop();
 		}
 	}
 }
